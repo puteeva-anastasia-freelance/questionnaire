@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&amp;display=swap&amp;subset=cyrillic-ext">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<title>Опросник для оценки вероятности синдрома обструктивного апноэ сна - Азбука Сна и Дыхания</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="page__title">
+			<h1 class="page__title-h1">Опросник для оценки вероятности синдрома обструктивного апноэ сна</h1>
+			<h2 class="page__title-h2">Оценка вероятности синдрома обструктивного апноэ сна</h2>
+		</div>
+		<p class="page__description">Результаты анкетирования носят предположительный характер и не могут заменить собой
+			респираторный мониторинг ночного дыхания, позволяющий на 100% определить/подтвердить наличие такого заболевания,
+			как синдром обструктивного апноэ сна.</p>
+		<p class="page__description">Результаты анкетирования позволяют предположить или исключить вероятность наличия
+			синдрома апноэ сна.<br>Для уточнения диагноза нужно проконсультироваться у врача-специалиста. Если Вы не знаете
+			врача-специалиста в своём регионе, мы с удовольствием поделимся с Вами информацией о квалифицированных кабинетах
+			медицины сна и врачах-сомнологах.</p>
+		<form class="form-test">
+			<div class="form-container">
+				<div class="form-row">
+					<div class="form-col-12 form-col-sm-5">
+						<fieldset class="form-test__fieldset">
+							<legend class="form-test__legend">1. Общая информация</legend>
+							<div class="form-test__wrap">
+								<label for="name-user" class="form-test__label">Имя: </label>
+								<input type="text" id="name-user" class="form-test__input" autofocus required autocomplete="off">
+							</div>
+							<div class="form-test__wrap">
+								<label for="age-user" class="form-test__label">Возраст: </label>
+								<input type="number" id="age-user" class="form-test__input" required>
+							</div>
+							<div class="form-test__wrap">
+								<label for="weight-user" class="form-test__label">Вес: </label>
+								<input type="number" id="weight-user" class="form-test__input" required>
+							</div>
+							<div class="form-test__wrap">
+								<label for="height-user" class="form-test__label">Рост в (см): </label>
+								<input type="number" id="height-user" class="form-test__input" required>
+							</div>
+							<div class="form-test__wrap-gender">
+								<label class="form-test__question form-test__question-gender">Пол: </label>
+								<input type="radio" name="question-6" id="question-6-1" data-quiz="1"><label class="form-test__answer"
+									for="question-6-1">Мужской</label>
+								<input type="radio" name="question-6" id="question-6-2" checked data-quiz="0"><label
+									class="form-test__answer" for="question-6-2">Женский</label>
+							</div>
+						</fieldset>
+					</div>
+					<div class="form-col-12 form-col-sm-6 form-offset-sm-1">
+						<fieldset class="form-test__fieldset">
+							<legend class="form-test__legend">2. Шкала STOP-BANG для расчета риска</legend>
+							<span class="form-test__subtitle">stop</span>
+							<div>
+								<label class="form-test__question">Громко ли Вы храпите (громче чем говорите, или настолько громко,
+									чтобы Вас можно было бы услышать за закрытой дверью)?</label>
+								<input type="radio" name="question-1" id="question-1-1" data-quiz="1"><label class="form-test__answer"
+									for="question-1-1">Да</label>
+								<input type="radio" name="question-1" id="question-1-2" checked data-quiz="0"><label
+									class="form-test__answer" for="question-1-2">Нет</label>
+							</div>
+							<div>
+								<label class="form-test__question">Часто ли Вы чувствуете дневную усталость и сонливость?</label>
+								<input type="radio" name="question-2" id="question-2-1" data-quiz="1"><label class="form-test__answer"
+									for="question-2-1">Да</label>
+								<input type="radio" name="question-2" id="question-2-2" checked data-quiz="0"><label
+									class="form-test__answer" for="question-2-2">Нет</label>
+							</div>
+							<div>
+								<label class="form-test__question">Кто-нибудь говорил Вам, что наблюдал за Вами остановки дыхания во
+									сне?</label>
+								<input type="radio" name="question-3" id="question-3-1" data-quiz="1"><label class="form-test__answer"
+									for="question-3-1">Да</label>
+								<input type="radio" name="question-3" id="question-3-2" checked data-quiz="0"><label
+									class="form-test__answer" for="question-3-2">Нет</label>
+							</div>
+							<div>
+								<label class="form-test__question">У Вас есть повышение артериального давления, или же Вы принимаете
+									лекарства от гипертонии?</label>
+								<input type="radio" name="question-4" id="question-4-1" data-quiz="1"><label class="form-test__answer"
+									for="question-4-1">Да</label>
+								<input type="radio" name="question-4" id="question-4-2" checked data-quiz="0"><label
+									class="form-test__answer" for="question-4-2">Нет</label>
+							</div>
+							<span class="form-test__subtitle form-test__subtitle-bang">bang</span>
+							<div>
+								<label class="form-test__question">Объем шеи > 40 см?</label>
+								<input type="radio" name="question-5" id="question-5-1" data-quiz="1"><label class="form-test__answer"
+									for="question-5-1">Да</label>
+								<input type="radio" name="question-5" id="question-5-2" checked data-quiz="0"><label
+									class="form-test__answer" for="question-5-2">Нет</label>
+							</div>
+						</fieldset>
+					</div>
+					<div class="form-col-12">
+						<button type="submit" class="form-test__button">Определить</button>
+						<div class="form-test__result" style="display:none;" id="result">
+							<span class="form-test__result-title">Результат</span>
+							<span class="form-test__result-syndrome" id="syndrome"></span>
+							<span class="form-test__result-index" id="index-weight">Ваш индекс массы тела - <strong></strong></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<script src="js/common.js"></script>
+</body>
+
+</html>
